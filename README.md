@@ -34,9 +34,9 @@ The agent receives a reward of 1 for reaching the goal state, and a reward of 0 
 ![image](https://github.com/Saibandhavi75/monte-carlo-control/assets/94208895/e489c87c-af01-4cc9-af22-de3df3299ddb)
 
 ## MONTE CARLO CONTROL ALGORITHM
-*1.Initialize the state value function V(s) and the policy π(s) arbitrarily.
-*2.Generate an episode using π(s) and store the state, action, and reward sequence.
-*3.For each state s appearing in the episode:
+* 1.Initialize the state value function V(s) and the policy π(s) arbitrarily.
+* 2.Generate an episode using π(s) and store the state, action, and reward sequence.
+* 3.For each state s appearing in the episode:
   * G ← return following the first occurrence of s
   * Append G to Returns(s)
   * V(s) ← average(Returns(s))
