@@ -7,7 +7,7 @@ To develop a Python program to find the optimal policy for the given RL environm
 The FrozenLake environment in OpenAI Gym is a gridworld problem that challenges reinforcement learning agents to navigate a slippery terrain to reach a goal state while avoiding hazards. Note that the environment is closed with a fence, so the agent cannot leave the gridworld.
 
 ## States
-  . 5 Terminal States:
+  * . 5 Terminal States:
   
       . G (Goal): The state the agent aims to reach.
       
