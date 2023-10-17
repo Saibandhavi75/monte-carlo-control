@@ -34,19 +34,27 @@ The agent receives a reward of 1 for reaching the goal state, and a reward of 0 
 ![image](https://github.com/Saibandhavi75/monte-carlo-control/assets/94208895/e489c87c-af01-4cc9-af22-de3df3299ddb)
 
 ## MONTE CARLO CONTROL ALGORITHM
-* 1.Initialize the state value function V(s) and the policy π(s) arbitrarily.
-* 2.Generate an episode using π(s) and store the state, action, and reward sequence.
-* 3.For each state s appearing in the episode:
+1.Initialize the state value function V(s) and the policy π(s) arbitrarily.
+
+2.Generate an episode using π(s) and store the state, action, and reward sequence.
+
+3.For each state s appearing in the episode:
   * G ← return following the first occurrence of s
   * Append G to Returns(s)
   * V(s) ← average(Returns(s))
-*4.For each state s in the episode:
+
+4.For each state s in the episode:
   * π(s) ← argmax_a ∑_s' P(s'|s,a)V(s')
-*5.Repeat steps 2-4 until the policy converges.
-*6.Use the function decay_schedule to decay the value of epsilon and alpha.
-*7.Use the function gen_traj to generate a trajectory.
-*8.Use the function tqdm to display the progress bar.
-*9.After the policy converges, use the function np.argmax to find the optimal policy. The function takes the following arguments:
+
+5.Repeat steps 2-4 until the policy converges.
+
+6.Use the function decay_schedule to decay the value of epsilon and alpha.
+
+7.Use the function gen_traj to generate a trajectory.
+
+8.Use the function tqdm to display the progress bar.
+
+9.After the policy converges, use the function np.argmax to find the optimal policy. The function takes the following arguments:
   *Q: The Q-table.
   *axis: The axis along which to find the maximum value.
 
