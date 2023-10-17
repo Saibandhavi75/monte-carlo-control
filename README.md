@@ -55,8 +55,8 @@ The agent receives a reward of 1 for reaching the goal state, and a reward of 0 
 8.Use the function tqdm to display the progress bar.
 
 9.After the policy converges, use the function np.argmax to find the optimal policy. The function takes the following arguments:
-  *Q: The Q-table.
-  *axis: The axis along which to find the maximum value.
+  * Q: The Q-table.
+  * axis: The axis along which to find the maximum value.
 
 ## MONTE CARLO CONTROL FUNCTION
 ```
