@@ -19,10 +19,10 @@ The FrozenLake environment in OpenAI Gym is a gridworld problem that challenges 
 
 ## Actions
 The agent has 4 possible actions:
-    *0: Left
-    *1: Down
-    *2: Right
-    *3: Up
+    * 0: Left
+    * 1: Down
+    * 2: Right
+    * 3: Up
 ## Transition Probabilities
 Slippery surface with a 33.3% chance of moving as intended and a 66.6% chance of moving in orthogonal directions. For example, if the agent intends to move left, there is a
     * 33.3% chance of moving left, a
